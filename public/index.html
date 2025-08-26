@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Postimages Uploader</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<main class="card">
+<h1>Postimages Uploader</h1>
+
+
+<label class="dropzone" id="dropzone">
+<input type="file" id="fileInput" accept="image/*" />
+<div id="dropText">Drag & drop an image here or click to select</div>
+</label>
+
+
+<div class="controls">
+<label for="expiration">Expiration:</label>
+<select id="expiration">
+<option value="0">No expiration</option>
+<option value="1d">1 day</option>
+<option value="7d">7 days</option>
+<option value="14d">14 days</option>
+<option value="31d">31 days</option>
+</select>
+
+
+<button id="uploadBtn">Upload</button>
+</div>
+
+
+<div id="status"></div>
+<div id="result" class="result"></div>
+</main>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
