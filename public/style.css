@@ -1,0 +1,18 @@
+:root{--bg:#f4f6fb;--card:#ffffff;--accent:#2563eb}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;min-height:100vh;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px}
+.card{background:var(--card);padding:24px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.08);width:100%;max-width:680px}
+h1{margin:0 0 16px;font-size:20px}
+.dropzone{display:flex;align-items:center;justify-content:center;border:2px dashed #e6e9ef;padding:28px;border-radius:10px;cursor:pointer;margin-bottom:12px;position:relative}
+.dropzone input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.controls{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+button{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+button:disabled{opacity:.6}
+.result{margin-top:12px}
+.status{margin-top:8px}
+.link{display:flex;gap:8px;align-items:center}
+.link input{flex:1;padding:8px;border-radius:6px;border:1px solid #ddd}
+.copy-btn{background:#111;padding:8px 10px;border-radius:6px;color:#fff;border:0;cursor:pointer}
+
+
+@media (max-width:520px){.controls{flex-direction:column;align-items:stretch}}
