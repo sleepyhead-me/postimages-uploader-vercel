@@ -1,0 +1,11 @@
+{
+"name": "postimages-uploader-vercel",
+"version": "1.0.0",
+"private": true,
+"engines": {
+"node": "18.x"
+},
+"dependencies": {
+"form-data": "^4.0.0"
+}
+}
